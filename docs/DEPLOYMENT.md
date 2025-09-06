@@ -9,6 +9,8 @@ FlowEdge site uses Railway for hosting with automatic deployments from GitHub br
 - **URL**: https://flowedgeintel.com
 - **Branch**: `main`
 - **Auto-deploy**: Yes
+- **CNAME**: kfb6x6ad.up.railway.app
+- **SSL**: ✅ Active
 - **Purpose**: Live site for users
 
 ### Staging
@@ -150,6 +152,33 @@ railway up
    - Deployment success
    - Deployment failure
    - Service crashes
+
+## SSL/Domain Troubleshooting
+
+### SSL Certificate Not Working
+```bash
+# Common issues and solutions:
+
+1. Certificate Pending
+   - Railway shows "Issuing TLS certificate"
+   - Wait 5-15 minutes for issuance
+   - Can take up to 24 hours in rare cases
+
+2. DNS Configuration
+   - Use CNAME for subdomains (www)
+   - Use A record for root domain (@)
+   - Disable Cloudflare proxy (DNS only)
+
+3. Namecheap Setup
+   - Root domain: A record → Railway IP
+   - WWW: CNAME → railway.app URL
+   - Add both domains in Railway
+
+4. Verification
+   - Check DNS propagation: whatsmydns.net
+   - Railway dashboard should show green checkmark
+   - Both http:// and https:// should work
+```
 
 ## Troubleshooting
 
