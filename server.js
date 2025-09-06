@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Use Railway's PORT or default to 3000
-const PORT = process.env.PORT || 3000;
+// Use Railway's PORT or default to 8080
+const PORT = process.env.PORT || 8080;
 
 // Serve static files from current directory
 app.use(express.static('.'));

@@ -12,9 +12,10 @@ FlowEdge site uses Railway for hosting with automatic deployments from GitHub br
 - **Purpose**: Live site for users
 
 ### Staging
-- **URL**: https://staging-flowedge.railway.app (or custom domain)
+- **URL**: https://flowedge-site-staging.up.railway.app
 - **Branch**: `develop`
 - **Auto-deploy**: Yes
+- **Port**: 8080
 - **Purpose**: Testing and preview
 
 ## Setting Up Railway Environments
