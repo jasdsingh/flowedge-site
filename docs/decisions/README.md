@@ -17,6 +17,7 @@ ADRs are documents that capture important architectural decisions made along wit
 | [001](001-hosting-platform-railway.md) | Hosting Platform Selection - Railway | Accepted | 2025-01-09 |
 | [002](002-repository-structure-separate.md) | Repository Structure - Separate Repositories | Accepted | 2025-01-09 |
 | [003](003-frontend-framework-nextjs.md) | Frontend Framework - Next.js Migration Strategy | Accepted | 2025-01-09 |
+| [004](004-branching-strategy.md) | Git Branching Strategy | Accepted | 2025-01-09 |
 
 ## ADR Template
 
@@ -59,6 +60,7 @@ YYYY-MM-DD
 ### Architecture
 - [002 - Repository Structure](002-repository-structure-separate.md)
 - [003 - Frontend Framework](003-frontend-framework-nextjs.md)
+- [004 - Git Branching Strategy](004-branching-strategy.md)
 
 ## Quick Reference
 
